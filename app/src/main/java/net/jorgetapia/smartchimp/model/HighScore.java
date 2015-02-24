@@ -33,8 +33,7 @@ public class HighScore extends Model {
         String resultRecords = new Select(tableName + ".*, " + tableName + ".Id as _id").
                 from(HighScore.class).orderBy("Score DESC").toSql();
 
-        Cursor resultCursor = Cache.openDatabase().rawQuery(resultRecords, null);
-        return resultCursor;
+        return Cache.openDatabase().rawQuery(resultRecords, null);
     }
 
     public static void removeAll() {

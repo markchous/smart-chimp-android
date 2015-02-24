@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.jorgetapia.smartchimp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name=".HowToPlayActivity"
+            android:label="@string/title_activity_how_to_play" >
+        </activity>
+        <activity
+            android:name=".CreditsActivity"
+            android:label="@string/title_activity_credits" >
+        </activity>
+        <activity
+            android:name=".GameOverActivity"
+            android:label="@string/title_activity_game_over" >
+        </activity>
+
+        <!-- ActiveAndroid configuration -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="SmartChimp.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="net.jorgetapia.smartchimp.model.Question, net.jorgetapia.smartchimp.model.Answer, net.jorgetapia.smartchimp.model.HighScore" />
+
+        <activity
+            android:name=".HighScoreActivity"
+            android:label="@string/title_activity_high_score" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Chimp</string>
+
+    <!-- Main Activity Strings -->
+    <string name="play_button">PLAY</string>
+    <string name="how_to_play_button">HOW TO PLAY</string>
+    <string name="high_scores_button">HIGH SCORES</string>
+    <string name="credits_button">CREDITS</string>
+    <string name="share_game_button">SHARE GAME</string>
+    <string name="smart_chimp_logo">Smart Chimp Logo</string>
+    <string name="facebook_button">Facebook Button</string>
+    <string name="twitter_button">Twitter Button</string>
+    <string name="chimp_in_vine">Chimp in vine</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_how_to_play">How To Play</string>
+    <string name="share_text_google_play">Testing my #CriticalThinking skills with #SmartChimp, by @TheMonk3yb0ts. Available on the Google Play Store!</string>
+
+    <!-- Play Activity Strings -->
+    <string name="correct_text">0/10 Correct</string>
+    <string name="score_text">x0</string>
+    <string name="win_text">CONGRATULATIONS!\nYou win</string>
+    <string name="lose_text">YOU LOST!\nBetter luck next time</string>
+
+    <!-- How To Play Activity Strings -->
+    <string name="instructions">Smart Chimp is a game that will put your Critical Thinking skills to test. By thinking out of the box, you will be able to outsmart The Monk3yb0t in a series of  fun challenges.\n\n1. A problem statement will be presented to you.\n\n2. Four (4) possible scenarios that may solve the problem will appear below.\n\n3. By making use of your Critical Thinking abilities, you will tap the scenario you consider is the best solution for the problem.\n\n4. If you answered correctly, you will be awarded a certain amount of bananas, according to the problem\'s difficulty.\n\n5. Try to solve the set of ten (10) problems to get the most bananas. To win, you must answer at least seven (7) questions correctly.\n\n6. Enjoy the game and keep playing to train and improve your Critical Thinking skills.</string>
+    <string name="title_activity_credits">CreditsActivity</string>
+
+    <!-- High Scores Activity Strings -->
+    <string name="reset_button">RESET</string>
+
+    <!-- Credits Activity Strings -->
+    <string name="credits">Smart Chimp: The Critical Thinking Mokeybot is a game developed at Full Sail University as final project for the course Psychology of Play, taught by Miss Gertie Williams on January 2015.\n\nGroup \"The Monk3yb0ts\" members:\n\nJorge Tapia\nProgramming\n\nMark Houston\nUI/UX Design\n\nGabriel Figarella\nUI/UX Design\n\nAlfonso Figueroa\nMusic/SFX\n\nLarry Abril\nProject Management\n\nBenjamin Meily\nAcademic Research\n\nChad Ramkhelawan\nAcademic Research\n\nJuan González\nAcademic Research</string>
+    <string name="title_credits_credits">CreditsActivity</string>
+    <string name="small_banana">Small banana</string>
+    <string name="title_activity_game_over">Game Over Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="banana_peel">Banana peel</string>
+    <string name="title_activity_high_score">HighScoreActivity</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen_background"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_menu_button"
+            android:focusableInTouchMode="false"
+            android:text="@string/play_button"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/main_menu_button_font_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/howToPlayButton"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_menu_button"
+            android:text="@string/how_to_play_button"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/main_menu_button_font_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/highScoresButton"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_menu_button"
+            android:text="@string/high_scores_button"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/main_menu_button_font_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/creditsButton"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_menu_button"
+            android:text="@string/credits_button"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/main_menu_button_font_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_menu_button"
+            android:text="@string/share_game_button"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/main_menu_button_font_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/smartChimpLogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/smart_chimp_logo"
+        android:src="@drawable/smart_chimp_logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="162dp"
+        android:layout_height="206dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="-16dp"
+        android:contentDescription="@string/chimp_in_vine"
+        android:src="@drawable/monkey_in_vine" />
+
+</RelativeLayout>

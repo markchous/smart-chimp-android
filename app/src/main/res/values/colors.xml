@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="blackColor" type="color">#000000</item>
+    <item name="whiteColor" type="color">#FFFFFF</item>
+    <item name="gameBackgroundColor" type="color">#09A0D2</item>
+    <item name="questionBackgroundColor" type="color">#2B68A3</item>
+    <item name="quitBackColor" type="color">#FFAD23</item>
+
+</resources>

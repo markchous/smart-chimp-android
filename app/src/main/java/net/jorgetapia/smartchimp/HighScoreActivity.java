@@ -49,7 +49,7 @@ public class HighScoreActivity extends ActionBarActivity {
     }
 
     private void reloadData() {
-        HighScoreAdapter adapter = new HighScoreAdapter(this, HighScore.allRowsCursor());
+        HighScoreAdapter adapter = new HighScoreAdapter(this, HighScore.getCursorForAllRows());
         this.highScoresListView.setAdapter(adapter);
     }
 }

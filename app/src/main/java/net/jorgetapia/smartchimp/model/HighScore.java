@@ -28,7 +28,7 @@ public class HighScore extends Model {
         return new Select().from(HighScore.class).orderBy("Score ASC").execute();
     }
 
-    public static Cursor allRowsCursor() {
+    public static Cursor getCursorForAllRows() {
         String tableName = Cache.getTableInfo(HighScore.class).getTableName();
         String resultRecords = new Select(tableName + ".*, " + tableName + ".Id as _id").
                 from(HighScore.class).orderBy("Score DESC").toSql();

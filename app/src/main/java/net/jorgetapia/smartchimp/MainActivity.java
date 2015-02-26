@@ -872,6 +872,751 @@ public class MainActivity extends ActionBarActivity {
         answer25_4.question = question25;
         answer25_4.save();
 
+        // Question 26
+        Question question26 = new Question();
+        question26.text = "A boy and a doctor were fishing.The boy is the doctor's son but the " +
+                "doctor is not the boy's father. Who is the doctor?";
+        question26.save();
+
+        Answer answer26_1 = new Answer();
+        answer26_1.text = "His grandfather";
+        answer26_1.correct = false;
+        answer26_1.question = question26;
+        answer26_1.save();
+
+        Answer answer26_2 = new Answer();
+        answer26_2.text = "His brother";
+        answer26_2.correct = false;
+        answer26_2.question = question26;
+        answer26_2.save();
+
+        Answer answer26_3 = new Answer();
+        answer26_3.text = "His mother";
+        answer26_3.correct = true;
+        answer26_3.question = question26;
+        answer26_3.save();
+
+        Answer answer26_4 = new Answer();
+        answer26_4.text = "Can't tell";
+        answer26_4.correct = false;
+        answer26_4.question = question26;
+        answer26_4.save();
+
+        // Question 27
+        Question question27 = new Question();
+        question27.text = "Tanya is older than Eric. Cliff is older than Tanya. Eric is older " +
+                "than Cliff. If the first two statements are true, the third statement is?";
+        question27.save();
+
+        Answer answer27_1 = new Answer();
+        answer27_1.text = "True";
+        answer27_1.correct = false;
+        answer27_1.question = question27;
+        answer27_1.save();
+
+        Answer answer27_2 = new Answer();
+        answer27_2.text = "False";
+        answer27_2.correct = true;
+        answer27_2.question = question27;
+        answer27_2.save();
+
+        Answer answer27_3 = new Answer();
+        answer27_3.text = "Both";
+        answer27_3.correct = false;
+        answer27_3.question = question27;
+        answer27_3.save();
+
+        Answer answer27_4 = new Answer();
+        answer27_4.text = "None";
+        answer27_4.correct = false;
+        answer27_4.question = question27;
+        answer27_4.save();
+
+        // Question 28
+        Question question28 = new Question();
+        question28.text = "At the baseball game, Henry was sitting in seat 253. Marla was " +
+                "sitting to the right of Henry in seat 254. In the seat to the left of Henry was " +
+                "George. Inez was sitting to the left of George. Which seat is Inez sitting in?";
+        question28.save();
+
+        Answer answer28_1 = new Answer();
+        answer28_1.text = "251";
+        answer28_1.correct = true;
+        answer28_1.question = question28;
+        answer28_1.save();
+
+        Answer answer28_2 = new Answer();
+        answer28_2.text = "254";
+        answer28_2.correct = false;
+        answer28_2.question = question28;
+        answer28_2.save();
+
+        Answer answer28_3 = new Answer();
+        answer28_3.text = "255";
+        answer28_3.correct = false;
+        answer28_3.question = question28;
+        answer28_3.save();
+
+        Answer answer28_4 = new Answer();
+        answer28_4.text = "256";
+        answer28_4.correct = false;
+        answer28_4.question = question28;
+        answer28_4.save();
+
+        // Question 29
+        Question question29 = new Question();
+        question29.text = "Only gentlemen can become members of the club. Many of the members of " +
+                "the club are officers. Some of the officers have been invited for dinner.";
+        question29.save();
+
+        Answer answer29_1 = new Answer();
+        answer29_1.text = "All the members have been invited for dinner";
+        answer29_1.correct = false;
+        answer29_1.question = question29;
+        answer29_1.save();
+
+        Answer answer29_2 = new Answer();
+        answer29_2.text = "Some of the officers are not gentlemen";
+        answer29_2.correct = false;
+        answer29_2.question = question29;
+        answer29_2.save();
+
+        Answer answer29_3 = new Answer();
+        answer29_3.text = "All gentlemen are members of the club";
+        answer29_3.correct = true;
+        answer29_3.question = question29;
+        answer29_3.save();
+
+        Answer answer29_4 = new Answer();
+        answer29_4.text = "Only gentlemen have been invited for dinner";
+        answer29_4.correct = false;
+        answer29_4.question = question29;
+        answer29_4.save();
+
+        // Question 30
+        Question question30 = new Question();
+        question30.text = "Artists are generally whimsical. Some of them are frustrated. " +
+                "Frustrated people are prone to be drug addicts. Based on these statements which " +
+                "of the following conclusions is true? ";
+        question30.save();
+
+        Answer answer30_1 = new Answer();
+        answer30_1.text = "All frustrated people are drug addicts";
+        answer30_1.correct = false;
+        answer30_1.question = question30;
+        answer30_1.save();
+
+        Answer answer30_2 = new Answer();
+        answer30_2.text = "Some artists may be drug addicts";
+        answer30_2.correct = true;
+        answer30_2.question = question30;
+        answer30_2.save();
+
+        Answer answer30_3 = new Answer();
+        answer30_3.text = "All drug addicts are artists";
+        answer30_3.correct = false;
+        answer30_3.question = question30;
+        answer30_3.save();
+
+        Answer answer30_4 = new Answer();
+        answer30_4.text = "Frustrated people are whimsical";
+        answer30_4.correct = false;
+        answer30_4.question = question30;
+        answer30_4.save();
+
+        // Question 31
+        Question question31 = new Question();
+        question31.text = "If A is the son of Q, Q and Y are sisters, Z is the mother of Y, P is " +
+                "the son of Z, then which of the following statements is correct?";
+        question31.save();
+
+        Answer answer31_1 = new Answer();
+        answer31_1.text = "P is the maternal uncle of A";
+        answer31_1.correct = true;
+        answer31_1.question = question31;
+        answer31_1.save();
+
+        Answer answer31_2 = new Answer();
+        answer31_2.text = "P and Y are sisters";
+        answer31_2.correct = false;
+        answer31_2.question = question31;
+        answer31_2.save();
+
+        Answer answer31_3 = new Answer();
+        answer31_3.text = "A and P are cousins";
+        answer31_3.correct = false;
+        answer31_3.question = question31;
+        answer31_3.save();
+
+        Answer answer31_4 = new Answer();
+        answer31_4.text = "None of the above";
+        answer31_4.correct = false;
+        answer31_4.question = question31;
+        answer31_4.save();
+
+        // Question 32
+        Question question32 = new Question();
+        question32.text = "Which is heavier a ton of feathers or a ton of gold?";
+        question32.save();
+
+        Answer answer32_1 = new Answer();
+        answer32_1.text = "A ton of feathers";
+        answer32_1.correct = false;
+        answer32_1.question = question32;
+        answer32_1.save();
+
+        Answer answer32_2 = new Answer();
+        answer32_2.text = "A ton of gold";
+        answer32_2.correct = false;
+        answer32_2.question = question32;
+        answer32_2.save();
+
+        Answer answer32_3 = new Answer();
+        answer32_3.text = "They are the same";
+        answer32_3.correct = true;
+        answer32_3.question = question32;
+        answer32_3.save();
+
+        Answer answer32_4 = new Answer();
+        answer32_4.text = "None";
+        answer32_4.correct = false;
+        answer32_4.question = question32;
+        answer32_4.save();
+
+        // Question 33
+        Question question33 = new Question();
+        question33.text = "Which month has 28 days?";
+        question33.save();
+
+        Answer answer33_1 = new Answer();
+        answer33_1.text = "February";
+        answer33_1.correct = false;
+        answer33_1.question = question33;
+        answer33_1.save();
+
+        Answer answer33_2 = new Answer();
+        answer33_2.text = "January";
+        answer33_2.correct = false;
+        answer33_2.question = question33;
+        answer33_2.save();
+
+        Answer answer33_3 = new Answer();
+        answer33_3.text = "December";
+        answer33_3.correct = false;
+        answer33_3.question = question33;
+        answer33_3.save();
+
+        Answer answer33_4 = new Answer();
+        answer33_4.text = "All";
+        answer33_4.correct = true;
+        answer33_4.question = question33;
+        answer33_4.save();
+
+        // Question 34
+        Question question34 = new Question();
+        question34.text = "How many times can you subtract 10 from 100?";
+        question34.save();
+
+        Answer answer34_1 = new Answer();
+        answer34_1.text = "10";
+        answer34_1.correct = false;
+        answer34_1.question = question34;
+        answer34_1.save();
+
+        Answer answer34_2 = new Answer();
+        answer34_2.text = "5";
+        answer34_2.correct = false;
+        answer34_2.question = question34;
+        answer34_2.save();
+
+        Answer answer34_3 = new Answer();
+        answer34_3.text = "2";
+        answer34_3.correct = false;
+        answer34_3.question = question34;
+        answer34_3.save();
+
+        Answer answer34_4 = new Answer();
+        answer34_4.text = "1";
+        answer34_4.correct = true;
+        answer34_4.question = question34;
+        answer34_4.save();
+
+        // Question 35
+        Question question35 = new Question();
+        question35.text = "Adam's mother had three children. The first child was named April. " +
+                "The second child was named May. What was the third child's name?";
+        question35.save();
+
+        Answer answer35_1 = new Answer();
+        answer35_1.text = "June";
+        answer35_1.correct = false;
+        answer35_1.question = question35;
+        answer35_1.save();
+
+        Answer answer35_2 = new Answer();
+        answer35_2.text = "March";
+        answer35_2.correct = false;
+        answer35_2.question = question35;
+        answer35_2.save();
+
+        Answer answer35_3 = new Answer();
+        answer35_3.text = "Adam";
+        answer35_3.correct = true;
+        answer35_3.question = question35;
+        answer35_3.save();
+
+        Answer answer35_4 = new Answer();
+        answer35_4.text = "Don't know";
+        answer35_4.correct = false;
+        answer35_4.question = question35;
+        answer35_4.save();
+
+        // Question 36
+        Question question36 = new Question();
+        question36.text = "You throw away the outside and cook the inside. Then you eat the " +
+                "outside and throw away the inside. What did you eat?";
+        question36.save();
+
+        Answer answer36_1 = new Answer();
+        answer36_1.text = "An egg";
+        answer36_1.correct = false;
+        answer36_1.question = question36;
+        answer36_1.save();
+
+        Answer answer36_2 = new Answer();
+        answer36_2.text = "An artichoke";
+        answer36_2.correct = false;
+        answer36_2.question = question36;
+        answer36_2.save();
+
+        Answer answer36_3 = new Answer();
+        answer36_3.text = "An ear of corn";
+        answer36_3.correct = true;
+        answer36_3.question = question36;
+        answer36_3.save();
+
+        Answer answer36_4 = new Answer();
+        answer36_4.text = "An onion";
+        answer36_4.correct = false;
+        answer36_4.question = question36;
+        answer36_4.save();
+
+        // Question 37
+        Question question37 = new Question();
+        question37.text = "It goes in dry, it comes out wet, the longer it's in the stronger it " +
+                "gets. What is it?";
+        question37.save();
+
+        Answer answer37_1 = new Answer();
+        answer37_1.text = "A swimmer";
+        answer37_1.correct = false;
+        answer37_1.question = question37;
+        answer37_1.save();
+
+        Answer answer37_2 = new Answer();
+        answer37_2.text = "A tea bag";
+        answer37_2.correct = true;
+        answer37_2.question = question37;
+        answer37_2.save();
+
+        Answer answer37_3 = new Answer();
+        answer37_3.text = "A soap bar";
+        answer37_3.correct = false;
+        answer37_3.question = question37;
+        answer37_3.save();
+
+        Answer answer37_4 = new Answer();
+        answer37_4.text = "The Titanic";
+        answer37_4.correct = false;
+        answer37_4.question = question37;
+        answer37_4.save();
+
+        // Question 38
+        Question question38 = new Question();
+        question38.text = "There are 6 mangoes in a basket and 6 kids eagerly waiting to get " +
+                "one. Each kid is given 1 mango, yet there is one mango in the basket. How come?";
+        question38.save();
+
+        Answer answer38_1 = new Answer();
+        answer38_1.text = "2 kids share 1 mango";
+        answer38_1.correct = false;
+        answer38_1.question = question38;
+        answer38_1.save();
+
+        Answer answer38_2 = new Answer();
+        answer38_2.text = "One kid left";
+        answer38_2.correct = false;
+        answer38_2.question = question38;
+        answer38_2.save();
+
+        Answer answer38_3 = new Answer();
+        answer38_3.text = "Last kid gets the basket with the mango in it";
+        answer38_3.correct = true;
+        answer38_3.question = question38;
+        answer38_3.save();
+
+        Answer answer38_4 = new Answer();
+        answer38_4.text = "Not possible";
+        answer38_4.correct = false;
+        answer38_4.question = question38;
+        answer38_4.save();
+
+        // Question 39
+        Question question39 = new Question();
+        question39.text = "What happens only in the middle of each month, in all of the seasons, " +
+                "except summer and happens only in the night, never in the day?";
+        question39.save();
+
+        Answer answer39_1 = new Answer();
+        answer39_1.text = "A change of seasons";
+        answer39_1.correct = false;
+        answer39_1.question = question39;
+        answer39_1.save();
+
+        Answer answer39_2 = new Answer();
+        answer39_2.text = "Sun and moon are together";
+        answer39_2.correct = false;
+        answer39_2.question = question39;
+        answer39_2.save();
+
+        Answer answer39_3 = new Answer();
+        answer39_3.text = "A 5 week month";
+        answer39_3.correct = false;
+        answer39_3.question = question39;
+        answer39_3.save();
+
+        Answer answer39_4 = new Answer();
+        answer39_4.text = "The letter 'n'";
+        answer39_4.correct = true;
+        answer39_4.question = question39;
+        answer39_4.save();
+
+        // Question 40
+        Question question40 = new Question();
+        question40.text = "What's in the middle of China?";
+        question40.save();
+
+        Answer answer40_1 = new Answer();
+        answer40_1.text = "Beijing";
+        answer40_1.correct = false;
+        answer40_1.question = question40;
+        answer40_1.save();
+
+        Answer answer40_2 = new Answer();
+        answer40_2.text = "The Great Wall";
+        answer40_2.correct = false;
+        answer40_2.question = question40;
+        answer40_2.save();
+
+        Answer answer40_3 = new Answer();
+        answer40_3.text = "The Himalayas";
+        answer40_3.correct = false;
+        answer40_3.question = question40;
+        answer40_3.save();
+
+        Answer answer40_4 = new Answer();
+        answer40_4.text = "The letter 'i'";
+        answer40_4.correct = true;
+        answer40_4.question = question40;
+        answer40_4.save();
+
+        // Question 41
+        Question question41 = new Question();
+        question41.text = "How many seconds are there in a year?";
+        question41.save();
+
+        Answer answer41_1 = new Answer();
+        answer41_1.text = "31536000";
+        answer41_1.correct = false;
+        answer41_1.question = question41;
+        answer41_1.save();
+
+        Answer answer41_2 = new Answer();
+        answer41_2.text = "365";
+        answer41_2.correct = false;
+        answer41_2.question = question41;
+        answer41_2.save();
+
+        Answer answer41_3 = new Answer();
+        answer41_3.text = "12";
+        answer41_3.correct = true;
+        answer41_3.question = question41;
+        answer41_3.save();
+
+        Answer answer41_4 = new Answer();
+        answer41_4.text = "None of the above";
+        answer41_4.correct = false;
+        answer41_4.question = question41;
+        answer41_4.save();
+
+        // Question 42
+        Question question42 = new Question();
+        question42.text = "If you were running a race and you passed the person in 2nd place, " +
+                "what place would you be in now?";
+        question42.save();
+
+        Answer answer42_1 = new Answer();
+        answer42_1.text = "1st";
+        answer42_1.correct = false;
+        answer42_1.question = question42;
+        answer42_1.save();
+
+        Answer answer42_2 = new Answer();
+        answer42_2.text = "2nd";
+        answer42_2.correct = true;
+        answer42_2.question = question42;
+        answer42_2.save();
+
+        Answer answer42_3 = new Answer();
+        answer42_3.text = "3rd";
+        answer42_3.correct = false;
+        answer42_3.question = question42;
+        answer42_3.save();
+
+        Answer answer42_4 = new Answer();
+        answer42_4.text = "None of the above";
+        answer42_4.correct = false;
+        answer42_4.question = question42;
+        answer42_4.save();
+
+        // Question 43
+        Question question43 = new Question();
+        question43.text = "When was it that Christmas and New Year were celebrated in the same " +
+                "year?";
+        question43.save();
+
+        Answer answer43_1 = new Answer();
+        answer43_1.text = "Leap years";
+        answer43_1.correct = false;
+        answer43_1.question = question43;
+        answer43_1.save();
+
+        Answer answer43_2 = new Answer();
+        answer43_2.text = "Year 2000";
+        answer43_2.correct = false;
+        answer43_2.question = question43;
+        answer43_2.save();
+
+        Answer answer43_3 = new Answer();
+        answer43_3.text = "Every year";
+        answer43_3.correct = true;
+        answer43_3.question = question43;
+        answer43_3.save();
+
+        Answer answer43_4 = new Answer();
+        answer43_4.text = "It's impossible";
+        answer43_4.correct = false;
+        answer43_4.question = question43;
+        answer43_4.save();
+
+        // Question 44
+        Question question44 = new Question();
+        question44.text = "20 pigeons sat on the branches of a tree. A man shot 1 pigeon with " +
+                "his gun. How many were left on the tree?";
+        question44.save();
+
+        Answer answer44_1 = new Answer();
+        answer44_1.text = "19 pigeons";
+        answer44_1.correct = false;
+        answer44_1.question = question44;
+        answer44_1.save();
+
+        Answer answer44_2 = new Answer();
+        answer44_2.text = "20, one is dead";
+        answer44_2.correct = false;
+        answer44_2.question = question44;
+        answer44_2.save();
+
+        Answer answer44_3 = new Answer();
+        answer44_3.text = "None, the rest flew away";
+        answer44_3.correct = true;
+        answer44_3.question = question44;
+        answer44_3.save();
+
+        Answer answer44_4 = new Answer();
+        answer44_4.text = "None of the above";
+        answer44_4.correct = false;
+        answer44_4.question = question44;
+        answer44_4.save();
+
+        // Question 45
+        Question question45 = new Question();
+        question45.text = "A clerk at a butcher shop stands five-feet ten-inches tall and wears " +
+                "size 13 sneakers. What does he weigh?";
+        question45.save();
+
+        Answer answer45_1 = new Answer();
+        answer45_1.text = "180lbs";
+        answer45_1.correct = false;
+        answer45_1.question = question45;
+        answer45_1.save();
+
+        Answer answer45_2 = new Answer();
+        answer45_2.text = "200lbs";
+        answer45_2.correct = false;
+        answer45_2.question = question45;
+        answer45_2.save();
+
+        Answer answer45_3 = new Answer();
+        answer45_3.text = "220lbs";
+        answer45_3.correct = false;
+        answer45_3.question = question45;
+        answer45_3.save();
+
+        Answer answer45_4 = new Answer();
+        answer45_4.text = "Meat";
+        answer45_4.correct = true;
+        answer45_4.question = question45;
+        answer45_4.save();
+
+        // Question 46
+        Question question46 = new Question();
+        question46.text = "Before Mt. Everest was discovered, which was the highest mountain in " +
+                "the world?";
+        question46.save();
+
+        Answer answer46_1 = new Answer();
+        answer46_1.text = "Mt. St. Helens";
+        answer46_1.correct = false;
+        answer46_1.question = question46;
+        answer46_1.save();
+
+        Answer answer46_2 = new Answer();
+        answer46_2.text = "Mt. Cotopaxi";
+        answer46_2.correct = false;
+        answer46_2.question = question46;
+        answer46_2.save();
+
+        Answer answer46_3 = new Answer();
+        answer46_3.text = "Mt. Popocatépetl";
+        answer46_3.correct = false;
+        answer46_3.question = question46;
+        answer46_3.save();
+
+        Answer answer46_4 = new Answer();
+        answer46_4.text = "Mt. Everest";
+        answer46_4.correct = true;
+        answer46_4.question = question46;
+        answer46_4.save();
+
+        // Question 47
+        Question question47 = new Question();
+        question47.text = "What can run but never walks, has a mouth but never talks, has a head " +
+                "but never weeps, and has a bed but never sleeps?";
+        question47.save();
+
+        Answer answer47_1 = new Answer();
+        answer47_1.text = "A river";
+        answer47_1.correct = true;
+        answer47_1.question = question47;
+        answer47_1.save();
+
+        Answer answer47_2 = new Answer();
+        answer47_2.text = "A clock";
+        answer47_2.correct = false;
+        answer47_2.question = question47;
+        answer47_2.save();
+
+        Answer answer47_3 = new Answer();
+        answer47_3.text = "The wind";
+        answer47_3.correct = false;
+        answer47_3.question = question47;
+        answer47_3.save();
+
+        Answer answer47_4 = new Answer();
+        answer47_4.text = "The sea";
+        answer47_4.correct = false;
+        answer47_4.question = question47;
+        answer47_4.save();
+
+        // Question 48
+        Question question48 = new Question();
+        question48.text = "Imagine you are in a sinking rowboat surrounded by sharks. How would " +
+                "you survive?";
+        question48.save();
+
+        Answer answer48_1 = new Answer();
+        answer48_1.text = "Hitting sharks with the paddles";
+        answer48_1.correct = false;
+        answer48_1.question = question48;
+        answer48_1.save();
+
+        Answer answer48_2 = new Answer();
+        answer48_2.text = "Riding the sharks";
+        answer48_2.correct = false;
+        answer48_2.question = question48;
+        answer48_2.save();
+
+        Answer answer48_3 = new Answer();
+        answer48_3.text = "Trying to out-swim the sharks";
+        answer48_3.correct = false;
+        answer48_3.question = question48;
+        answer48_3.save();
+
+        Answer answer48_4 = new Answer();
+        answer48_4.text = "Stop imagining";
+        answer48_4.correct = true;
+        answer48_4.question = question48;
+        answer48_4.save();
+
+        // Question 49
+        Question question49 = new Question();
+        question49.text = "Eskimos are very good hunters, but they never hunt penguins. Why not?";
+        question49.save();
+
+        Answer answer49_1 = new Answer();
+        answer49_1.text = "Penguins are too dangerous";
+        answer49_1.correct = false;
+        answer49_1.question = question49;
+        answer49_1.save();
+
+        Answer answer49_2 = new Answer();
+        answer49_2.text = "There are no penguins in the Artic";
+        answer49_2.correct = true;
+        answer49_2.question = question49;
+        answer49_2.save();
+
+        Answer answer49_3 = new Answer();
+        answer49_3.text = "Polar bears hunt all penguins";
+        answer49_3.correct = false;
+        answer49_3.question = question49;
+        answer49_3.save();
+
+        Answer answer49_4 = new Answer();
+        answer49_4.text = "Eskimos are vegan";
+        answer49_4.correct = false;
+        answer49_4.question = question49;
+        answer49_4.save();
+
+        // Question 50
+        Question question50 = new Question();
+        question50.text = "What demands an answer but asks no question?";
+        question50.save();
+
+        Answer answer50_1 = new Answer();
+        answer50_1.text = "A wife";
+        answer50_1.correct = false;
+        answer50_1.question = question50;
+        answer50_1.save();
+
+        Answer answer50_2 = new Answer();
+        answer50_2.text = "A letter";
+        answer50_2.correct = false;
+        answer50_2.question = question50;
+        answer50_2.save();
+
+        Answer answer50_3 = new Answer();
+        answer50_3.text = "A mother-in-law";
+        answer50_3.correct = false;
+        answer50_3.question = question50;
+        answer50_3.save();
+
+        Answer answer50_4 = new Answer();
+        answer50_4.text = "A telephone";
+        answer50_4.correct = true;
+        answer50_4.question = question50;
+        answer50_4.save();
+
         Log.d(LOG_TAG, "Data setup complete.");
     }
 }

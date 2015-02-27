@@ -78,7 +78,7 @@
             android:textSize="@dimen/question_font_size"
             android:gravity="center"
             android:background="@color/questionBackgroundColor"
-            android:padding="5dp" />
+            android:padding="20dp" />
     </ScrollView>
 
     <LinearLayout

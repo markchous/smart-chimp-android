@@ -118,6 +118,7 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void setupData() {
         // Clear question cache
         Question.removeAll();

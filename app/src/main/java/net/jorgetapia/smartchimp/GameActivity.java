@@ -158,10 +158,8 @@ public class GameActivity extends ActionBarActivity {
                 this.loadData();
             } else {
                 if (this.correctQuestions >= 7) {
-                    Toast.makeText(this, getString(R.string.win_text), Toast.LENGTH_LONG).show();
                     this.won = true;
                 } else {
-                    Toast.makeText(this, getString(R.string.lose_text), Toast.LENGTH_LONG).show();
                     this.won = false;
                 }
             }
@@ -184,10 +182,8 @@ public class GameActivity extends ActionBarActivity {
                 }, 5000);
             } else {
                 if (this.correctQuestions >= 7) {
-                    Toast.makeText(this, getString(R.string.win_text), Toast.LENGTH_LONG).show();
                     this.won = true;
                 } else {
-                    Toast.makeText(this, getString(R.string.lose_text), Toast.LENGTH_LONG).show();
                     this.won = false;
                 }
             }

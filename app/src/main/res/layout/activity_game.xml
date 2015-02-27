@@ -67,6 +67,7 @@
         android:layout_above="@+id/linearLayout2"
         android:fillViewport="true"
         android:padding="10dp">
+
         <TextView
             android:id="@+id/questionTextView"
             android:layout_width="match_parent"

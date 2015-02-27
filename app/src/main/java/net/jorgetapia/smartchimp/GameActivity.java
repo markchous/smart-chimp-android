@@ -82,9 +82,9 @@ public class GameActivity extends ActionBarActivity {
                 "fonts/AmericanTypewriter.ttc");
         Typeface bold = Typeface.create(americanTypewriter, Typeface.BOLD);
 
-        ScrollView questionScrollView = (ScrollView) findViewById(R.id.questionScrollView);
-        questionScrollView.setVerticalScrollBarEnabled(true);
-        questionScrollView.setScrollbarFadingEnabled(false);
+        this.questionScrollView = (ScrollView) findViewById(R.id.questionScrollView);
+        this.questionScrollView.setVerticalScrollBarEnabled(true);
+        this.questionScrollView.setScrollbarFadingEnabled(false);
 
         this.correctTextView = (TextView) findViewById(R.id.correctTextView);
         this.correctTextView.setTypeface(bold);
@@ -94,8 +94,6 @@ public class GameActivity extends ActionBarActivity {
 
         this.questionTextView = (TextView) findViewById(R.id.questionTextView);
         this.questionTextView.setTypeface(bold);
-
-        this.questionScrollView = (ScrollView) findViewById(R.id.questionScrollView);
 
         this.answerButton1 = (Button) findViewById(R.id.answerButton1);
         this.answerButton1.setTypeface(americanTypewriter);
@@ -157,11 +155,7 @@ public class GameActivity extends ActionBarActivity {
                 this.questionScrollView.fullScroll(ScrollView.FOCUS_UP);
                 this.loadData();
             } else {
-                if (this.correctQuestions >= 7) {
-                    this.won = true;
-                } else {
-                    this.won = false;
-                }
+                this.won = this.correctQuestions >= 7;
             }
         } else {
             AudioManager.playWrongSound(this);
@@ -181,11 +175,7 @@ public class GameActivity extends ActionBarActivity {
                     }
                 }, 5000);
             } else {
-                if (this.correctQuestions >= 7) {
-                    this.won = true;
-                } else {
-                    this.won = false;
-                }
+                this.won = this.correctQuestions >= 7;
             }
         }
 

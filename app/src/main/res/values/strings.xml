@@ -16,7 +16,7 @@
     <string name="title_activity_game">GameActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_how_to_play">How To Play</string>
-    <string name="share_text_google_play">Testing my #CriticalThinking skills with #SmartChimp, by @TheMonk3yb0ts. Available on the Google Play Store!</string>
+    <string name="share_text_google_play">Testing my #CriticalThinking skills with #SmartChimp, by @TheMonk3yb0ts. Available on the Google Play Store! https://play.google.com/store/apps/details?id=net.jorgetapia.smartchimp</string>
 
     <!-- Play Activity Strings -->
     <string name="correct_text">0/10 Correct</string>

@@ -30,10 +30,14 @@ public class MainActivity extends ActionBarActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         this.setupUI();
 
-        AudioManager.release();
-        AudioManager.startMusic(this, AudioManager.MUSIC_MENU);
-
         this.setupData();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        AudioManager.pause();
     }
 
     @Override

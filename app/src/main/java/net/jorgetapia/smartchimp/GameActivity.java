@@ -2,8 +2,10 @@ package net.jorgetapia.smartchimp;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
@@ -50,9 +52,6 @@ public class GameActivity extends ActionBarActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        AudioManager.release();
-        AudioManager.startMusic(this, AudioManager.MUSIC_GAME);
-
         this.currentQuestion = 0;
         this.bananasEarned = 0;
         this.correctQuestions = 0;
@@ -63,10 +62,29 @@ public class GameActivity extends ActionBarActivity {
         Log.d(LOG_TAG, "Game started...");
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        AudioManager.pause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        AudioManager.release();
+        AudioManager.startMusic(this, AudioManager.MUSIC_GAME);
+    }
+
     private void setupUI() {
         Typeface americanTypewriter = Typeface.createFromAsset(getAssets(),
                 "fonts/AmericanTypewriter.ttc");
         Typeface bold = Typeface.create(americanTypewriter, Typeface.BOLD);
+
+        ScrollView questionScrollView = (ScrollView) findViewById(R.id.questionScrollView);
+        questionScrollView.setVerticalScrollBarEnabled(true);
+        questionScrollView.setScrollbarFadingEnabled(false);
 
         this.correctTextView = (TextView) findViewById(R.id.correctTextView);
         this.correctTextView.setTypeface(bold);
@@ -85,7 +103,7 @@ public class GameActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 GameActivity activity = GameActivity.this;
-                activity.processAnswer(activity.answers.get(0));
+                activity.processAnswer(activity.answers.get(0), activity.answerButton1);
             }
         });
 
@@ -96,7 +114,7 @@ public class GameActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 GameActivity activity = GameActivity.this;
-                activity.processAnswer(activity.answers.get(1));
+                activity.processAnswer(activity.answers.get(1), activity.answerButton2);
             }
         });
 
@@ -107,7 +125,7 @@ public class GameActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 GameActivity activity = GameActivity.this;
-                activity.processAnswer(activity.answers.get(2));
+                activity.processAnswer(activity.answers.get(2), activity.answerButton3);
             }
         });
 
@@ -118,12 +136,12 @@ public class GameActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 GameActivity activity = GameActivity.this;
-                activity.processAnswer(activity.answers.get(3));
+                activity.processAnswer(activity.answers.get(3), activity.answerButton4);
             }
         });
     }
 
-    private void processAnswer(Answer answer) {
+    private void processAnswer(Answer answer, Button buttonPressed) {
         if (answer.correct) {
             AudioManager.playRightSound(this);
             Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
@@ -151,11 +169,19 @@ public class GameActivity extends ActionBarActivity {
             AudioManager.playWrongSound(this);
             Toast.makeText(this, "Not correct!", Toast.LENGTH_SHORT).show();
 
+            this.correctQuestion(buttonPressed);
             ++this.currentQuestion;
 
             if (this.currentQuestion < 10) {
-                this.questionScrollView.fullScroll(ScrollView.FOCUS_UP);
-                this.loadData();
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        GameActivity.this.questionScrollView.fullScroll(ScrollView.FOCUS_UP);
+                        GameActivity.this.loadData();
+                    }
+                }, 5000);
             } else {
                 if (this.correctQuestions >= 7) {
                     Toast.makeText(this, getString(R.string.win_text), Toast.LENGTH_LONG).show();
@@ -175,11 +201,18 @@ public class GameActivity extends ActionBarActivity {
                 newHighScore.save();
             }
 
-            Intent intent = new Intent(this, GameOverActivity.class);
-            intent.putExtra("won", this.won);
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
 
-            startActivity(intent);
-            finish();
+                @Override
+                public void run() {
+                    Intent intent = new Intent(GameActivity.this, GameOverActivity.class);
+                    intent.putExtra("won", GameActivity.this.won);
+
+                    GameActivity.this.startActivity(intent);
+                    GameActivity.this.finish();
+                }
+            }, 5000);
         }
     }
 
@@ -191,10 +224,48 @@ public class GameActivity extends ActionBarActivity {
         this.scoreTextView.setText("x" + this.bananasEarned);
     }
 
+    private void correctQuestion(Button buttonPressed) {
+        Typeface americanTypewriter = Typeface.createFromAsset(getAssets(),
+                "fonts/AmericanTypewriter.ttc");
+        Typeface bold = Typeface.create(americanTypewriter, Typeface.BOLD);
+
+        buttonPressed.setTypeface(bold);
+        buttonPressed.setTextColor(Color.RED);
+
+        for (int i = 0; i < this.answers.size(); i++) {
+            if (this.answers.get(i).correct) {
+                switch (i) {
+                    case 0:
+                        this.answerButton1.setTypeface(bold);
+                        this.answerButton1.setTextColor(Color.GREEN);
+                        break;
+                    case 1:
+                        this.answerButton2.setTypeface(bold);
+                        this.answerButton2.setTextColor(Color.GREEN);
+                        break;
+                    case 2:
+                        this.answerButton3.setTypeface(bold);
+                        this.answerButton3.setTextColor(Color.GREEN);
+                        break;
+                    case 3:
+                        this.answerButton4.setTypeface(bold);
+                        this.answerButton4.setTextColor(Color.GREEN);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+    }
+
     private void loadData() {
         if (this.questionsLoaded == null) {
             this.questionsForGame = Question.getQuestionsForGame();
         }
+
+        Typeface americanTypewriter = Typeface.createFromAsset(getAssets(),
+                "fonts/AmericanTypewriter.ttc");
+        Typeface normal = Typeface.create(americanTypewriter, Typeface.NORMAL);
 
         Question question = this.questionsForGame.get(currentQuestion);
 
@@ -203,9 +274,20 @@ public class GameActivity extends ActionBarActivity {
         this.questionTextView.setText("QUESTION #" + (this.currentQuestion + 1) + ":\n" + question.text);
 
         this.answerButton1.setText(this.answers.get(0).text);
+        this.answerButton1.setTypeface(normal);
+        this.answerButton1.setTextColor(Color.BLACK);
+
         this.answerButton2.setText(this.answers.get(1).text);
+        this.answerButton2.setTypeface(normal);
+        this.answerButton2.setTextColor(Color.BLACK);
+
         this.answerButton3.setText(this.answers.get(2).text);
+        this.answerButton3.setTypeface(normal);
+        this.answerButton3.setTextColor(Color.BLACK);
+
         this.answerButton4.setText(this.answers.get(3).text);
+        this.answerButton4.setTypeface(normal);
+        this.answerButton4.setTextColor(Color.BLACK);
 
         this.questionsLoaded = true;
     }

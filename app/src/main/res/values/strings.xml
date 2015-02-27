@@ -32,7 +32,7 @@
     <string name="reset_button">RESET</string>
 
     <!-- Credits Activity Strings -->
-    <string name="credits">Smart Chimp: The Critical Thinking Mokeybot is a game developed at Full Sail University as final project for the course Psychology of Play, taught by Miss Gertie Williams on January 2015.\n\nGroup \"The Monk3yb0ts\" members:\n\nJorge Tapia\nProgramming\n\nMark Houston\nUI/UX Design\n\nGabriel Figarella\nUI/UX Design\n\nAlfonso Figueroa\nMusic/SFX\n\nLarry Abril\nProject Management\n\nBenjamin Meily\nAcademic Research\n\nChad Ramkhelawan\nAcademic Research\n\nJuan González\nAcademic Research</string>
+    <string name="credits">Smart Chimp: The Critical Thinking Monkeybot is a game developed at Full Sail University as final project for the course Psychology of Play, taught by Miss Gertie Williams on January 2015.\n\nGroup \"The Monk3yb0ts\" members:\n\nJorge Tapia\nProgramming\n\nMark Houston\nUI/UX Design\n\nGabriel Figarella\nUI/UX Design\n\nAlfonso Figueroa\nMusic/SFX\n\nLarry Abril\nProject Management\n\nBenjamin Meily\nAcademic Research\n\nChad Ramkhelawan\nAcademic Research\n\nJuan González\nAcademic Research</string>
     <string name="title_credits_credits">CreditsActivity</string>
     <string name="small_banana">Small banana</string>
     <string name="title_activity_game_over">Game Over Activity</string>

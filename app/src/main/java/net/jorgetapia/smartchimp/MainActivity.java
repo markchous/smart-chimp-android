@@ -519,7 +519,7 @@ public class MainActivity extends ActionBarActivity {
         question14.save();
 
         Answer answer14_1 = new Answer();
-        answer14_1.text = "All the way into the woods.";
+        answer14_1.text = "All the way into the woods";
         answer14_1.correct = false;
         answer14_1.question = question14;
         answer14_1.save();
@@ -1002,7 +1002,7 @@ public class MainActivity extends ActionBarActivity {
         Question question30 = new Question();
         question30.text = "Artists are generally whimsical. Some of them are frustrated. " +
                 "Frustrated people are prone to be drug addicts. Based on these statements which " +
-                "of the following conclusions is true? ";
+                "of the following conclusions is true?";
         question30.save();
 
         Answer answer30_1 = new Answer();
@@ -1061,7 +1061,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Question 32
         Question question32 = new Question();
-        question32.text = "Which is heavier a ton of feathers or a ton of gold?";
+        question32.text = "Which is heavier, a ton of feathers or a ton of gold?";
         question32.save();
 
         Answer answer32_1 = new Answer();
@@ -1279,7 +1279,7 @@ public class MainActivity extends ActionBarActivity {
         answer39_1.save();
 
         Answer answer39_2 = new Answer();
-        answer39_2.text = "Sun and moon are together";
+        answer39_2.text = "The Northern Lights";
         answer39_2.correct = false;
         answer39_2.question = question39;
         answer39_2.save();
@@ -1576,7 +1576,7 @@ public class MainActivity extends ActionBarActivity {
         answer49_1.save();
 
         Answer answer49_2 = new Answer();
-        answer49_2.text = "There are no penguins in the Artic";
+        answer49_2.text = "There are no penguins in the Arctic";
         answer49_2.correct = true;
         answer49_2.question = question49;
         answer49_2.save();

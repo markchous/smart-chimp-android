@@ -1,14 +1,23 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('.MMdd')
+    return formattedDate
+}
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 28
     defaultConfig {
-        applicationId 'net.jorgetapia.smartchimp'
-        minSdkVersion 11
-        targetSdkVersion 21
-        versionCode 104
-        versionName "1.0.4"
+        applicationId "com.frontline.essentials"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 12       // increment with every release
+        versionName '2.0.0' + getDate()   // change with every release
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -16,12 +25,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    productFlavors {
-    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support:design:28.0.0-alpha3'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'org.koin:koin-android:1.0.0-beta-6'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.github.ptmr3:fluxx:1.0.7'
+    annotationProcessor 'com.github.ptmr3:fluxxap:1.0.5'
+    kapt 'com.github.ptmr3:fluxxap:1.0.5'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
